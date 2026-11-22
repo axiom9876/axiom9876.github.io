@@ -1,0 +1,1052 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>秘密研究所神秘 | 官方视频门户_探索未知影像与纪录内容</title>
+<meta name="description" content="秘密研究所神秘官方网站，专注神秘现象、未知档案与深度纪录视频的品牌门户，为创作者与企业搭建高品质内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121a2b'/%3E%3Ccircle cx='32' cy='28' r='12' fill='none' stroke='%233ee6c4' stroke-width='3'/%3E%3Cpath d='M32 40v14M24 54h16' stroke='%233ee6c4' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='28' r='4' fill='%23f7b733'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --sir-bg:#0d1320;
+    --sir-bg-2:#111a2c;
+    --sir-panel:#16223a;
+    --sir-panel-2:#1b2a47;
+    --sir-line:rgba(120,160,210,.18);
+    --sir-text:#e6edf7;
+    --sir-muted:#94a6c0;
+    --sir-neon:#3ee6c4;
+    --sir-neon-soft:rgba(62,230,196,.14);
+    --sir-amber:#f7b733;
+    --sir-danger:#ff6b6b;
+    --sir-radius:16px;
+    --sir-sticky-h:104px;
+    --sir-shadow:0 18px 40px rgba(0,0,0,.38);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:var(--sir-sticky-h);}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,sans-serif;
+    background:radial-gradient(1200px 700px at 15% -10%,#1a2b4a 0%,var(--sir-bg) 55%) fixed;
+    color:var(--sir-text);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;cursor:pointer;}
+  .sir-container{width:min(1180px,92vw);margin:0 auto;}
+  .sir-mono{font-family:"SFMono-Regular",Consolas,"Courier New",monospace;letter-spacing:.04em;}
+
+  /* ---------- 吸顶公告 + 页头 ---------- */
+  .sir-sticky-wrap{position:sticky;top:0;z-index:60;}
+  .sir-announce{
+    background:linear-gradient(90deg,#16203a,#1d3557 55%,#16203a);
+    border-bottom:1px solid var(--sir-line);
+    font-size:13px;
+    color:#cfe4ff;
+  }
+  .sir-announce .sir-container{
+    display:flex;align-items:center;gap:12px;padding:9px 0;overflow:hidden;
+  }
+  .sir-announce-tag{
+    flex:none;background:var(--sir-neon);color:#04201a;font-weight:700;
+    padding:1px 10px;border-radius:999px;font-size:12px;letter-spacing:.08em;
+  }
+  .sir-announce-track{display:flex;gap:34px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;}
+  .sir-announce-track span{opacity:.92;}
+  .sir-announce-track b{color:var(--sir-amber);font-weight:600;}
+  .sir-header{
+    background:rgba(13,19,32,.92);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--sir-line);
+  }
+  .sir-header .sir-container{
+    display:flex;align-items:center;gap:22px;padding:13px 0;
+  }
+  .sir-logo{display:flex;align-items:center;gap:10px;flex:none;}
+  .sir-logo-mark{
+    width:38px;height:38px;border-radius:11px;flex:none;
+    background:linear-gradient(140deg,#1f3a5f,#0f1a2e);
+    border:1px solid rgba(62,230,196,.5);
+    display:grid;place-items:center;
+  }
+  .sir-logo-text{display:flex;flex-direction:column;line-height:1.2;}
+  .sir-logo-text strong{font-size:17px;letter-spacing:.03em;}
+  .sir-logo-text small{font-size:11px;color:var(--sir-muted);letter-spacing:.24em;}
+  .sir-nav{display:flex;gap:20px;font-size:14.5px;flex:1;}
+  .sir-nav a{color:#c3d2e8;padding:4px 2px;border-bottom:2px solid transparent;transition:.2s;}
+  .sir-nav a:hover{color:var(--sir-neon);border-color:var(--sir-neon);}
+  .sir-search{
+    position:relative;display:flex;align-items:center;flex:none;
+  }
+  .sir-search input{
+    width:200px;padding:8px 34px 8px 12px;border-radius:999px;
+    border:1px solid var(--sir-line);background:#0b1220;color:var(--sir-text);
+    font-size:13px;outline:none;transition:.25s;
+  }
+  .sir-search input:focus{width:250px;border-color:var(--sir-neon);box-shadow:0 0 0 3px var(--sir-neon-soft);}
+  .sir-search button{
+    position:absolute;right:4px;top:50%;transform:translateY(-50%);
+    width:28px;height:28px;border-radius:50%;border:0;background:var(--sir-neon-soft);
+    color:var(--sir-neon);display:grid;place-items:center;
+  }
+  .sir-burger{
+    display:none;background:none;border:1px solid var(--sir-line);color:var(--sir-text);
+    border-radius:10px;width:40px;height:38px;place-items:center;
+  }
+  .sir-search-hint{
+    position:absolute;top:44px;left:0;right:0;z-index:70;
+    background:#101c30;border:1px solid var(--sir-line);border-radius:12px;
+    box-shadow:var(--sir-shadow);font-size:13px;color:var(--sir-muted);
+    padding:8px;display:none;
+  }
+  .sir-search-hint.show{display:block;}
+  .sir-search-hint p{margin:0;padding:6px 8px;border-radius:8px;}
+  .sir-search-hint p:hover{background:var(--sir-panel-2);color:var(--sir-text);}
+
+  /* ---------- 通用 ---------- */
+  .sir-section{padding:66px 0;}
+  .sir-section + .sir-section{border-top:1px solid var(--sir-line);}
+  .sir-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;font-size:12.5px;
+    letter-spacing:.22em;color:var(--sir-neon);text-transform:uppercase;margin-bottom:14px;
+  }
+  .sir-eyebrow::before{content:"";width:26px;height:1px;background:var(--sir-neon);}
+  h2.sir-h2{font-size:clamp(23px,2.6vw,32px);margin:0 0 14px;line-height:1.35;letter-spacing:.01em;}
+  h2.sir-h2 em{font-style:normal;color:var(--sir-amber);}
+  h3.sir-h3{font-size:17.5px;margin:0 0 8px;line-height:1.5;}
+  .sir-lead{color:var(--sir-muted);font-size:14.5px;max-width:74ch;margin:0 0 30px;}
+  .sir-grid{display:grid;gap:22px;}
+  .sir-grid > *{min-width:0;}
+  .sir-btn{
+    display:inline-flex;align-items:center;gap:8px;border-radius:999px;
+    padding:10px 20px;font-size:14px;border:1px solid transparent;transition:.22s;
+  }
+  .sir-btn-primary{background:var(--sir-neon);color:#04211b;font-weight:700;}
+  .sir-btn-primary:hover{filter:brightness(1.1);transform:translateY(-1px);}
+  .sir-btn-ghost{border-color:rgba(150,190,230,.35);color:#d8e6f8;}
+  .sir-btn-ghost:hover{border-color:var(--sir-neon);color:var(--sir-neon);}
+  .sir-chip{
+    display:inline-block;font-size:12px;padding:2px 10px;border-radius:999px;
+    background:rgba(62,230,196,.12);color:#8ef0dc;border:1px solid rgba(62,230,196,.28);
+  }
+  .sir-chip-amber{background:rgba(247,183,51,.12);color:#ffd684;border-color:rgba(247,183,51,.3);}
+  .sir-card{
+    background:linear-gradient(160deg,var(--sir-panel),var(--sir-bg-2));
+    border:1px solid var(--sir-line);border-radius:var(--sir-radius);
+    transition:transform .25s,border-color .25s,box-shadow .25s;
+  }
+  .sir-card:hover{transform:translateY(-4px);border-color:rgba(62,230,196,.45);box-shadow:var(--sir-shadow);}
+
+  /* ---------- 首屏 4:6 ---------- */
+  .sir-hero{padding:52px 0 62px;}
+  .sir-hero-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:44px;align-items:center;}
+  .sir-hero h1{
+    font-size:clamp(34px,4.6vw,56px);line-height:1.16;margin:10px 0 18px;letter-spacing:-.01em;
+  }
+  .sir-hero h1 span{
+    background:linear-gradient(96deg,var(--sir-neon),#8fb7ff 60%,var(--sir-amber));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .sir-hero-desc{color:#b9c8dd;font-size:15px;margin:0 0 16px;}
+  .sir-hero-about{color:var(--sir-muted);font-size:14px;margin:0 0 26px;}
+  .sir-hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px;}
+  .sir-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}
+  .sir-stat{
+    background:rgba(23,36,60,.7);border:1px solid var(--sir-line);border-radius:12px;padding:12px 14px;
+  }
+  .sir-stat b{display:block;font-size:21px;color:var(--sir-neon);letter-spacing:.02em;}
+  .sir-stat small{color:var(--sir-muted);font-size:12px;}
+  .sir-hero-visual{position:relative;}
+  .sir-hero-visual img{border-radius:20px;border:1px solid rgba(120,170,220,.28);box-shadow:var(--sir-shadow);}
+  .sir-hero-badge{
+    position:absolute;left:18px;bottom:18px;background:rgba(9,16,28,.82);
+    border:1px solid var(--sir-line);backdrop-filter:blur(8px);
+    border-radius:12px;padding:8px 14px;font-size:12.5px;color:#cfe0f5;display:flex;gap:8px;align-items:center;
+  }
+  .sir-dot{width:8px;height:8px;border-radius:50%;background:var(--sir-danger);box-shadow:0 0 0 4px rgba(255,107,107,.16);}
+
+  /* ---------- 视频：双列卡片 ---------- */
+  .sir-video-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .sir-video-cover{position:relative;aspect-ratio:16/9;border-radius:14px 14px 0 0;overflow:hidden;}
+  .sir-video-cover img{width:100%;height:100%;object-fit:cover;}
+  .sir-video-play{
+    position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,transparent 45%,rgba(5,10,20,.72));
+  }
+  .sir-video-play span{
+    width:44px;height:44px;border-radius:50%;background:rgba(62,230,196,.9);color:#04211b;
+    display:grid;place-items:center;font-size:14px;font-weight:700;
+  }
+  .sir-video-body{padding:16px 18px 18px;}
+  .sir-meta{font-size:12.5px;color:var(--sir-muted);display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:8px;}
+  .sir-actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;}
+  .sir-act{
+    display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:#b6c7dd;
+    background:rgba(255,255,255,.04);border:1px solid var(--sir-line);
+    border-radius:999px;padding:5px 12px;transition:.2s;
+  }
+  .sir-act:hover{color:var(--sir-neon);border-color:rgba(62,230,196,.5);}
+  .sir-act.is-liked{color:var(--sir-danger);border-color:rgba(255,107,107,.45);background:rgba(255,107,107,.1);}
+  .sir-act.is-saved{color:var(--sir-amber);border-color:rgba(247,183,51,.5);background:rgba(247,183,51,.1);}
+
+  /* ---------- 文字视频列表 ---------- */
+  .sir-list{display:flex;flex-direction:column;gap:14px;margin-top:26px;}
+  .sir-list-item{
+    display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:18px;align-items:start;
+    padding:16px 18px;background:rgba(22,34,58,.6);border:1px solid var(--sir-line);border-radius:14px;
+    transition:.2s;
+  }
+  .sir-list-item:hover{border-color:rgba(62,230,196,.4);background:rgba(27,42,71,.8);}
+  .sir-list-no{font-size:20px;color:rgba(62,230,196,.55);font-weight:700;line-height:1.3;}
+  .sir-list-item h3{font-size:16px;margin:0 0 5px;}
+  .sir-list-item p{margin:0 0 8px;font-size:13.5px;color:var(--sir-muted);}
+  .sir-list-item .sir-actions{margin-top:0;}
+
+  /* ---------- 关键词解析 ---------- */
+  .sir-essay{max-width:86ch;}
+  .sir-essay p{color:#b7c6db;font-size:14.6px;margin:0 0 18px;}
+  .sir-essay h3{margin-top:30px;}
+  .sir-pull{
+    border-left:3px solid var(--sir-neon);padding:6px 0 6px 18px;margin:22px 0;
+    color:#d6e6fa;font-size:15px;
+  }
+  .sir-topic-grid{grid-template-columns:repeat(4,minmax(0,1fr));}
+  .sir-topic{
+    background:rgba(20,32,54,.7);border:1px solid var(--sir-line);border-radius:12px;
+    padding:14px 16px;font-size:13.5px;
+  }
+  .sir-topic b{display:block;color:var(--sir-neon);font-size:13px;margin-bottom:4px;letter-spacing:.06em;}
+
+  /* ---------- 作者：双列简介 ---------- */
+  .sir-author-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .sir-author{padding:20px 22px;display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;}
+  .sir-avatar{
+    width:64px;height:64px;border-radius:16px;display:grid;place-items:center;
+    font-size:22px;font-weight:700;color:#04211b;
+  }
+  .sir-author h3{margin:0 0 3px;font-size:16px;}
+  .sir-author .sir-field{font-size:12.5px;color:var(--sir-amber);margin-bottom:8px;}
+  .sir-author p{font-size:13.4px;color:var(--sir-muted);margin:0 0 10px;}
+  .sir-author-stats{font-size:12.5px;color:#a9bbd3;display:flex;gap:16px;flex-wrap:wrap;}
+
+  /* ---------- 评论：双列 ---------- */
+  .sir-comment-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .sir-comment{
+    padding:16px 18px;background:rgba(20,32,54,.66);border:1px solid var(--sir-line);border-radius:14px;
+    font-size:13.6px;color:#c6d5e9;
+  }
+  .sir-comment-head{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+  .sir-comment-head b{font-size:13.5px;color:#eaf2ff;}
+  .sir-comment-head small{color:var(--sir-muted);font-size:12px;}
+  .sir-comment-avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12.5px;font-weight:700;color:#04211b;flex:none;}
+  .sir-score{display:flex;gap:26px;flex-wrap:wrap;align-items:center;padding:20px 22px;margin-bottom:24px;}
+  .sir-score b{font-size:34px;color:var(--sir-amber);line-height:1;}
+  .sir-score div small{color:var(--sir-muted);font-size:12.5px;}
+  .sir-bar{height:6px;border-radius:4px;background:rgba(255,255,255,.08);overflow:hidden;width:150px;margin-top:6px;}
+  .sir-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--sir-neon),var(--sir-amber));}
+
+  /* ---------- 动态 / 合作 / FAQ ---------- */
+  .sir-news-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .sir-news{padding:18px 20px;}
+  .sir-news time{font-size:12px;color:var(--sir-neon);letter-spacing:.1em;}
+  .sir-news h3{font-size:15.5px;margin:8px 0 6px;}
+  .sir-news p{font-size:13.2px;color:var(--sir-muted);margin:0;}
+  .sir-partner-grid{grid-template-columns:repeat(4,minmax(0,1fr));}
+  .sir-partner{
+    border:1px dashed rgba(140,180,220,.3);border-radius:12px;padding:18px 14px;text-align:center;
+    font-size:13.5px;color:#b9cbe2;transition:.2s;
+  }
+  .sir-partner:hover{border-color:var(--sir-neon);color:var(--sir-neon);}
+  .sir-faq details{
+    border:1px solid var(--sir-line);border-radius:12px;padding:0;margin-bottom:12px;
+    background:rgba(20,32,54,.55);overflow:hidden;
+  }
+  .sir-faq summary{
+    list-style:none;cursor:pointer;padding:14px 18px;font-size:14.5px;display:flex;justify-content:space-between;gap:14px;
+  }
+  .sir-faq summary::-webkit-details-marker{display:none;}
+  .sir-faq summary::after{content:"+";color:var(--sir-neon);font-size:18px;line-height:1;}
+  .sir-faq details[open] summary::after{content:"−";}
+  .sir-faq details p{margin:0;padding:0 18px 16px;font-size:13.6px;color:var(--sir-muted);}
+
+  /* ---------- 页脚 ---------- */
+  .sir-footer{border-top:1px solid var(--sir-line);background:#0a1120;padding:50px 0 26px;}
+  .sir-footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:30px;}
+  .sir-footer h4{font-size:14px;margin:0 0 12px;color:#e8f1ff;}
+  .sir-footer p,.sir-footer li{font-size:13px;color:var(--sir-muted);}
+  .sir-footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;}
+  .sir-footer-bottom{
+    margin-top:36px;padding-top:18px;border-top:1px solid var(--sir-line);
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.4px;color:#7f92ac;
+  }
+
+  /* ---------- 弹窗 / Toast / 回顶 ---------- */
+  .sir-modal-mask{
+    position:fixed;inset:0;background:rgba(4,9,18,.76);backdrop-filter:blur(4px);
+    display:none;place-items:center;z-index:200;padding:20px;
+  }
+  .sir-modal-mask.show{display:grid;}
+  .sir-modal{
+    width:min(520px,94vw);background:linear-gradient(160deg,#16223a,#0e1728);
+    border:1px solid rgba(120,170,220,.3);border-radius:18px;padding:26px 26px 22px;
+    box-shadow:var(--sir-shadow);max-height:86vh;overflow:auto;
+  }
+  .sir-modal h3{margin:0 0 8px;font-size:19px;}
+  .sir-modal p{font-size:13.6px;color:var(--sir-muted);}
+  .sir-modal textarea,.sir-modal input{
+    width:100%;background:#0b1220;border:1px solid var(--sir-line);border-radius:10px;
+    color:var(--sir-text);padding:10px 12px;font-size:13.5px;font-family:inherit;margin-bottom:12px;outline:none;
+  }
+  .sir-modal textarea:focus,.sir-modal input:focus{border-color:var(--sir-neon);}
+  .sir-modal-close{
+    float:right;background:none;border:0;color:var(--sir-muted);font-size:22px;line-height:1;
+  }
+  .sir-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,24px);
+    background:var(--sir-neon);color:#04211b;font-weight:700;font-size:13.5px;
+    padding:10px 20px;border-radius:999px;opacity:0;pointer-events:none;transition:.3s;z-index:300;
+  }
+  .sir-toast.show{opacity:1;transform:translate(-50%,0);}
+  .sir-top{
+    position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+    background:rgba(62,230,196,.15);border:1px solid rgba(62,230,196,.45);color:var(--sir-neon);
+    display:grid;place-items:center;font-size:16px;opacity:0;pointer-events:none;transition:.3s;z-index:80;
+  }
+  .sir-top.show{opacity:1;pointer-events:auto;}
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:960px){
+    :root{--sir-sticky-h:150px;}
+    .sir-hero-grid{grid-template-columns:1fr;}
+    .sir-video-grid,.sir-author-grid,.sir-comment-grid,.sir-news-grid{grid-template-columns:1fr;}
+    .sir-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .sir-partner-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .sir-footer-grid{grid-template-columns:1fr 1fr;}
+    .sir-nav{
+      position:absolute;left:0;right:0;top:100%;background:#0e1728;border-bottom:1px solid var(--sir-line);
+      flex-direction:column;gap:0;padding:8px 0;display:none;
+    }
+    .sir-nav.open{display:flex;}
+    .sir-nav a{padding:11px 22px;border-bottom:0;}
+    .sir-header .sir-container{flex-wrap:wrap;position:relative;}
+    .sir-burger{display:grid;margin-left:auto;}
+    .sir-search{order:3;width:100%;}
+    .sir-search input{width:100%;}
+    .sir-search input:focus{width:100%;}
+  }
+  @media (max-width:600px){
+    :root{--sir-sticky-h:158px;}
+    .sir-section{padding:46px 0;}
+    .sir-stats{grid-template-columns:1fr 1fr;}
+    .sir-list-item{grid-template-columns:40px minmax(0,1fr);}
+    .sir-list-item .sir-actions{grid-column:2;}
+    .sir-topic-grid,.sir-partner-grid,.sir-footer-grid{grid-template-columns:1fr;}
+    .sir-author{grid-template-columns:52px minmax(0,1fr);}
+    .sir-avatar{width:52px;height:52px;border-radius:13px;font-size:18px;}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sir-sticky-wrap">
+  <div class="sir-announce" aria-label="站内公告">
+    <div class="sir-container">
+      <span class="sir-announce-tag">公告</span>
+      <div class="sir-announce-track">
+        <span>《秘密研究所神秘·夜航档案》第 12 期正式上线，<b>新增 4 支高清纪录短片</b></span>
+        <span>2026 冬季「未解影像征集」开启报名，<b>投稿截止 12 月 20 日</b></span>
+        <span>神秘档案资料库开放第 3 批下载权限</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="sir-header">
+    <div class="sir-container">
+      <a class="sir-logo" href="#top" aria-label="秘密研究所神秘官网首页">
+        <span class="sir-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none">
+            <circle cx="12" cy="10" r="5.2" stroke="#3ee6c4" stroke-width="1.8"/>
+            <path d="M12 15.2V20M9 20h6" stroke="#3ee6c4" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="12" cy="10" r="1.8" fill="#f7b733"/>
+          </svg>
+        </span>
+        <span class="sir-logo-text">
+          <strong>秘密研究所神秘</strong>
+          <small>OFFICIAL VIDEO</small>
+        </span>
+      </a>
+      <nav class="sir-nav" id="sirNav" aria-label="主导航">
+        <a href="#videos">精选影像</a>
+        <a href="#archive">档案解析</a>
+        <a href="#authors">创作者</a>
+        <a href="#voices">观众回声</a>
+        <a href="#news">企业动态</a>
+        <a href="#faq">帮助中心</a>
+      </nav>
+      <div class="sir-search">
+        <input id="sirSearchInput" type="search" placeholder="搜索影像 / 档案 / 创作者" aria-label="站内搜索">
+        <button id="sirSearchBtn" type="button" aria-label="搜索">⌕</button>
+        <div class="sir-search-hint" id="sirSearchHint"></div>
+      </div>
+      <button class="sir-burger" id="sirBurger" type="button" aria-label="展开导航" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- S2 品牌首屏 -->
+  <section class="sir-hero" aria-labelledby="sirHeroTitle">
+    <div class="sir-container sir-hero-grid">
+      <div>
+        <span class="sir-eyebrow">官方网站 · 神秘纪录影像品牌</span>
+        <h1 id="sirHeroTitle"><span>秘密研究所神秘</span></h1>
+        <p class="sir-hero-desc">一个把未知拍成影像的官方视频门户：我们记录无解的坐标、失落的档案与普通人的奇遇，用专业的镜头语言，让神秘成为可被讨论、可被信任的内容。</p>
+        <p class="sir-hero-about">秘密研究所神秘是深耕神秘纪录垂直领域的视频品牌与内容平台，官网持续运营原创影像、档案解读与创作者社区。我们坚持正版授权、高清出品与真实取材，以企业级的内容标准服务观众与合作伙伴，提供从选题、拍摄到上线的完整生态支持。</p>
+        <div class="sir-hero-cta">
+          <a class="sir-btn sir-btn-primary" href="#videos">观看精选影像</a>
+          <a class="sir-btn sir-btn-ghost" href="#archive">进入档案解析</a>
+          <a class="sir-btn sir-btn-ghost" href="#submit" id="sirOpenSubmit">提交你的线索</a>
+        </div>
+        <div class="sir-stats">
+          <div class="sir-stat"><b data-count="1286">0</b><small>原创影像作品</small></div>
+          <div class="sir-stat"><b data-count="42">0</b><small>签约创作者（位）</small></div>
+          <div class="sir-stat"><b data-count="96">0</b><small>观众口碑满意度 %</small></div>
+        </div>
+      </div>
+      <div class="sir-hero-visual">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 520'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b1526'/%3E%3Cstop offset='0.55' stop-color='%23152a4a'/%3E%3Cstop offset='1' stop-color='%23091120'/%3E%3C/linearGradient%3E%3CradialGradient id='beam' cx='0.62' cy='0.32' r='0.5'%3E%3Cstop offset='0' stop-color='%233ee6c4' stop-opacity='0.42'/%3E%3Cstop offset='1' stop-color='%233ee6c4' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='520' fill='url(%23bg)'/%3E%3Crect width='800' height='520' fill='url(%23beam)'/%3E%3Ccircle cx='500' cy='168' r='86' fill='none' stroke='%233ee6c4' stroke-opacity='0.7' stroke-width='2'/%3E%3Ccircle cx='500' cy='168' r='124' fill='none' stroke='%233ee6c4' stroke-opacity='0.28' stroke-width='1.5' stroke-dasharray='6 10'/%3E%3Ccircle cx='500' cy='168' r='30' fill='%23f7b733' fill-opacity='0.85'/%3E%3Cpath d='M500 254v96M470 350h60' stroke='%233ee6c4' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M0 420 Q160 360 320 424 T800 400 L800 520 L0 520 Z' fill='%230a1526' fill-opacity='0.9'/%3E%3Cg stroke='%238fb7ff' stroke-opacity='0.5' stroke-width='1.4'%3E%3Cpath d='M90 430l22-40 22 40z' fill='none'/%3E%3Cpath d='M190 448l16-30 16 30z' fill='none'/%3E%3Cpath d='M660 440l18-34 18 34z' fill='none'/%3E%3C/g%3E%3Cg fill='%238fb7ff' fill-opacity='0.7'%3E%3Ccircle cx='140' cy='120' r='2.4'/%3E%3Ccircle cx='238' cy='80' r='1.8'/%3E%3Ccircle cx='318' cy='150' r='2.1'/%3E%3Ccircle cx='690' cy='96' r='2'/%3E%3Ccircle cx='740' cy='220' r='1.7'/%3E%3Ccircle cx='620' cy='60' r='2.4'/%3E%3C/g%3E%3Crect x='40' y='40' width='150' height='30' rx='15' fill='%230b1526' stroke='%233ee6c4' stroke-opacity='0.5'/%3E%3Ctext x='62' y='60' font-family='monospace' font-size='13' fill='%233ee6c4'%3EARCHIVE 012%3C/text%3E%3C/svg%3E"
+             alt="秘密研究所神秘官方网站首屏主视觉：夜间观测台与档案编号画面"
+             width="800" height="520" loading="eager">
+        <div class="sir-hero-badge"><span class="sir-dot" aria-hidden="true"></span>官方发布 · 每周三晚 20:00 更新</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 视频内容：双列重点卡片 -->
+  <section class="sir-section" id="videos" aria-labelledby="sirVideosTitle">
+    <div class="sir-container">
+      <span class="sir-eyebrow">精选影像 · 本期焦点</span>
+      <h2 class="sir-h2" id="sirVideosTitle">在<em>秘密研究所神秘</em>的镜头里，未知有了形状</h2>
+      <p class="sir-lead">本期焦点由官方编辑部从近期原创作品中挑选，覆盖城市探索、深度测评与人物访谈三条内容线。所有影像均为高清正版出品，欢迎收藏与分享。</p>
+
+      <div class="sir-grid sir-video-grid">
+        <article class="sir-card">
+          <div class="sir-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23101a2e'/%3E%3Cstop offset='1' stop-color='%23204460'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23a)'/%3E%3Cg stroke='%233ee6c4' stroke-opacity='0.6' fill='none' stroke-width='2'%3E%3Crect x='70' y='80' width='150' height='190' rx='6'/%3E%3Crect x='250' y='120' width='120' height='150' rx='6'/%3E%3Crect x='400' y='60' width='170' height='210' rx='6'/%3E%3C/g%3E%3Cg fill='%23f7b733' fill-opacity='0.75'%3E%3Ccircle cx='110' cy='130' r='7'/%3E%3Ccircle cx='290' cy='170' r='7'/%3E%3Ccircle cx='470' cy='110' r='7'/%3E%3C/g%3E%3Cpath d='M60 330h520' stroke='%238fb7ff' stroke-opacity='0.4' stroke-width='2'/%3E%3Cpath d='M100 330l18-30 18 30M330 330l22-38 22 38' fill='none' stroke='%233ee6c4' stroke-opacity='0.5' stroke-width='2'/%3E%3C/svg%3E"
+                 alt="城市夜巷的老旧档案馆外立面航拍画面" width="640" height="360" loading="lazy">
+            <div class="sir-video-play"><span aria-hidden="true">▶</span></div>
+          </div>
+          <div class="sir-video-body">
+            <span class="sir-chip">城市探索</span>
+            <h3 class="sir-h3" style="margin-top:10px">夜访旧城档案馆：被锁了四十年的第 7 排书架</h3>
+            <p style="font-size:13.6px;color:var(--sir-muted);margin:0">摄制组用三个月时间申请到一次夜间拍摄许可，记录下这座档案馆在闭馆之后的真实声音：电梯、走廊、以及那排始终没有编号的书架。</p>
+            <div class="sir-meta"><span>作者：夜航观察员</span><span>播放 42.8 万</span><span>点赞 1.9 万</span><span>收藏 8600</span></div>
+            <div class="sir-actions">
+              <button class="sir-act sir-like" type="button" data-liked="false">♡ 点赞 <i>1.9万</i></button>
+              <button class="sir-act sir-save" type="button" data-saved="false">☆ 收藏</button>
+              <button class="sir-act sir-copy" type="button">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="sir-card">
+          <div class="sir-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='b' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%230c1a1f'/%3E%3Cstop offset='1' stop-color='%232a3f2f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23b)'/%3E%3Cpath d='M0 300 Q120 210 260 290 T640 260 L640 360 L0 360 Z' fill='%23111f22'/%3E%3Cg stroke='%2399d6a8' stroke-width='2' fill='none' stroke-opacity='0.8'%3E%3Cpath d='M120 300v-90M120 240l-34-26M120 262l36-30M120 280l-40-18'/%3E%3Cpath d='M470 292v-72M470 248l-26-22M470 268l30-24'/%3E%3C/g%3E%3Ccircle cx='540' cy='96' r='38' fill='%23f7e7a0' fill-opacity='0.8'/%3E%3Cg fill='%23f7e7a0' fill-opacity='0.7'%3E%3Ccircle cx='90' cy='80' r='2'/%3E%3Ccircle cx='230' cy='60' r='2'/%3E%3Ccircle cx='330' cy='110' r='1.8'/%3E%3Ccircle cx='420' cy='70' r='2'/%3E%3C/g%3E%3C/svg%3E"
+                 alt="山谷中废弃观测站的夜间景象与树影" width="640" height="360" loading="lazy">
+            <div class="sir-video-play"><span aria-hidden="true">▶</span></div>
+          </div>
+          <div class="sir-video-body">
+            <span class="sir-chip sir-chip-amber">深度测评</span>
+            <h3 class="sir-h3" style="margin-top:10px">一台旧观测仪的三次校准：我们如何验证一段模糊影像</h3>
+            <p style="font-size:13.6px;color:var(--sir-muted);margin:0">把一段网络流传的夜间影像带回工作室，从设备参数、地理坐标到光源角度，逐项复现，最后得出结论：有可能是真的，但它并不神秘。</p>
+            <div class="sir-meta"><span>作者：林间档案室</span><span>播放 28.3 万</span><span>点赞 1.2 万</span><span>收藏 5400</span></div>
+            <div class="sir-actions">
+              <button class="sir-act sir-like" type="button" data-liked="false">♡ 点赞 <i>1.2万</i></button>
+              <button class="sir-act sir-save" type="button" data-saved="false">☆ 收藏</button>
+              <button class="sir-act sir-copy" type="button">复制链接</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="sir-list" aria-label="更多精选影像条目">
+        <article class="sir-list-item">
+          <div class="sir-list-no">01</div>
+          <div>
+            <h3>雾中信号：一段 1987 年的短波录音复原</h3>
+            <p>声音工程师用降噪算法重建了 39 秒的磁带噪声，我们邀请了三位语言学者与两位无线电爱好者共同听辨。</p>
+            <div class="sir-meta"><span class="sir-chip">人物访谈</span><span>作者：旧频率</span><span>播放 19.6 万</span><span>点赞 7800</span></div>
+          </div>
+          <div class="sir-actions">
+            <button class="sir-act sir-like" type="button" data-liked="false">♡ 7800</button>
+            <button class="sir-act sir-save" type="button" data-saved="false">☆</button>
+          </div>
+        </article>
+        <article class="sir-list-item">
+          <div class="sir-list-no">02</div>
+          <div>
+            <h3>沿海小镇的第七次潮汐记录</h3>
+            <p>当地渔民口述的潮汐时间表与气象记录相差 11 分钟，我们连续跟拍了七次涨潮，试图找到这 11 分钟的去向。</p>
+            <div class="sir-meta"><span class="sir-chip">在地文化</span><span>作者：潮线纪录组</span><span>播放 15.4 万</span><span>点赞 6100</span></div>
+          </div>
+          <div class="sir-actions">
+            <button class="sir-act sir-like" type="button" data-liked="false">♡ 6100</button>
+            <button class="sir-act sir-save" type="button" data-saved="false">☆</button>
+          </div>
+        </article>
+        <article class="sir-list-item">
+          <div class="sir-list-no">03</div>
+          <div>
+            <h3>被反复涂改的地图：一次手稿修复实录</h3>
+            <p>修复师在一张老地图背面发现了四层墨迹，我们用多光谱扫描把每一层单独还原，得到了四个不同的版本。</p>
+            <div class="sir-meta"><span class="sir-chip">创作幕后</span><span>作者：秘密研究所神秘编辑部</span><span>播放 12.9 万</span><span>点赞 5300</span></div>
+          </div>
+          <div class="sir-actions">
+            <button class="sir-act sir-like" type="button" data-liked="false">♡ 5300</button>
+            <button class="sir-act sir-save" type="button" data-saved="false">☆</button>
+          </div>
+        </article>
+        <article class="sir-list-item">
+          <div class="sir-list-no">04</div>
+          <div>
+            <h3>深夜电台的守夜人：一次三个小时的访谈</h3>
+            <p>他主持了十八年午夜节目，收集了上千封听众来信。这一期我们只聊信件，不聊神秘。</p>
+            <div class="sir-meta"><span class="sir-chip sir-chip-amber">情感故事</span><span>作者：走神的灯</span><span>播放 10.2 万</span><span>点赞 4900</span></div>
+          </div>
+          <div class="sir-actions">
+            <button class="sir-act sir-like" type="button" data-liked="false">♡ 4900</button>
+            <button class="sir-act sir-save" type="button" data-saved="false">☆</button>
+          </div>
+        </article>
+        <article class="sir-list-item">
+          <div class="sir-list-no">05</div>
+          <div>
+            <h3>镜头之外：我们如何为一次拍摄做背景核查</h3>
+            <p>从选题到上线，一支 8 分钟的短片平均要通过 23 项核查。这期把内部工作流程完整公开。</p>
+            <div class="sir-meta"><span class="sir-chip">行业观察</span><span>作者：秘密研究所神秘编辑部</span><span>播放 8.7 万</span><span>点赞 3600</span></div>
+          </div>
+          <div class="sir-actions">
+            <button class="sir-act sir-like" type="button" data-liked="false">♡ 3600</button>
+            <button class="sir-act sir-save" type="button" data-saved="false">☆</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析 800 字以上 -->
+  <section class="sir-section" id="archive" aria-labelledby="sirArchiveTitle">
+    <div class="sir-container">
+      <span class="sir-eyebrow">档案解析 · 深度内容</span>
+      <h2 class="sir-h2" id="sirArchiveTitle">为什么“<em>秘密研究所神秘</em>”值得被认真记录</h2>
+      <p class="sir-lead">这段解析来自编辑部内部的选题手册，它回答一个常被问到的问题：神秘题材为什么需要品牌、需要官网、需要一套可被检验的创作方法。</p>
+
+      <div class="sir-essay">
+        <h3 class="sir-h3">一、神秘不是猎奇，而是一种对证据的耐心</h3>
+        <p>很多观众第一次接触秘密研究所神秘，是因为某个看起来解释不通的画面。但真正让人留下来的，往往不是那个画面本身，而是我们在画面之后做的事：标注时间、核对坐标、比对气象记录、联系当事人、邀请第三方复核。我们把这一整套流程叫做“证据链”。在一次关于山谷光点的拍摄中，摄制组先后去了四次现场，第一次只拍到雾，第二次拍到误入镜头的车灯，第三次因为设备电池低温失效，直到第四次才在同样的时间窗口复现了那段光。最终成片里，那段画面只占了 26 秒，剩下的 12 分钟都在讲“为什么它可能不是我们以为的东西”。这正是秘密研究所神秘作为企业级内容品牌的基本态度：不急着给答案，先把问题问对。</p>
+        <p>这种耐心带来了一个意外的好处——观众开始愿意在评论区补充线索。有人贴出自己家乡的旧报纸，有人提供祖父留下的观测笔记，还有人指出我们某一期视频里的地标名称写错了。这些反馈被整理进官网的档案修订记录，成为内容生态的一部分。对我们来说，神秘题材的可持续运营，靠的不是制造悬念，而是把每一次悬念都当成一次公开的、可追溯的研究。</p>
+
+        <h3 class="sir-h3">二、从个人兴趣到内容生态：平台如何持续运营</h3>
+        <p>秘密研究所神秘从最早的三个人、一台相机，发展到现在拥有签约创作者四十余位、原创影像一千二百余部的视频平台。这个过程中最重要的转变，是从“做一个账号”变成“运营一个内容生态”。官网承担的角色因此变得关键：它是品牌的门面，也是创作者的工作台，还是观众与档案之间的索引。我们在官网上公开了选题方向、投稿规范、核查标准与更新节奏，让每一位想加入的人都能判断自己是否合适。创作者提交线索后，会先经过初筛，再由对应的领域编辑对接，必要时还会安排联合拍摄。上线之后，数据与反馈会回流到选题池，形成下一轮的灵感。</p>
+        <p>为了保证品质，我们坚持三条底线：第一，所有影像必须原创或获得正版授权，转载内容一律标注来源；第二，涉及个人隐私与敏感地点的素材，上线前必须完成脱敏处理；第三，任何结论都要标注确定性等级，把“已证实”“待复核”“无法判断”分开写清楚。这些规则听起来有些笨拙，但正是它们让秘密研究所神秘在同类内容中保持了口碑。很多合作方第一次接触我们时，最关心的不是播放量，而是“你们会不会为了流量夸大事实”。我们的回答始终是：不会，因为夸大一次，就要用十次解释去弥补。</p>
+
+        <h3 class="sir-h3">三、创作者为什么选择这里：专业、正版与陪伴</h3>
+        <p>在秘密研究所神秘的创作者名录里，有前纪录片摄影师、声音工程师、地图修复师、中学物理老师，也有纯粹的爱好者。他们选择这里的理由各不相同，但有几个词反复出现：专业、正版、陪伴。专业体现在流程上——我们有标准的分镜模板、素材命名规范与字幕校对清单；正版体现在素材上——音乐、字体、影像授权都有明确来源；陪伴体现在日常里——新人有带教编辑，作品上线后有数据复盘，遇到争议时有品牌方出面沟通。对于很多独立创作者来说，这种“有人在背后”的感觉，比一次爆款更重要。</p>
+        <p>我们也把这种陪伴延伸到观众一侧。官网的评论区不追求热闹，而是鼓励具体：说清楚你在哪一分钟看到了什么、为什么觉得不对劲、有没有类似的经历。我们会在每月底整理一份“观众线索月报”，把有价值的补充反馈公开给所有人。这种双向的、持续的互动，让秘密研究所神秘从一个视频品牌，慢慢长成了一个有记忆的社区。未来我们还会开放更多档案的下载与二次创作权限，让这些影像真正成为公共讨论的材料，而不只是被消费的内容。</p>
+
+        <div class="sir-pull">“把未知拍成影像，把影像交给证据，把证据留给时间。”——秘密研究所神秘编辑部选题手册</div>
+      </div>
+
+      <div class="sir-grid sir-topic-grid" style="margin-top:34px">
+        <div class="sir-topic"><b>内容方向 01</b>城市探索与在地文化线索整理</div>
+        <div class="sir-topic"><b>内容方向 02</b>深度测评与影像证据复核</div>
+        <div class="sir-topic"><b>内容方向 03</b>人物访谈与创作者幕后</div>
+        <div class="sir-topic"><b>内容方向 04</b>知识科普与档案修复实录</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="sir-section" aria-labelledby="sirTopicTitle">
+    <div class="sir-container">
+      <span class="sir-eyebrow">专题企划 · 持续更新</span>
+      <h2 class="sir-h2" id="sirTopicTitle">三组正在进行的<em>秘密研究所神秘</em>长期企划</h2>
+      <p class="sir-lead">长期企划是我们与观众之间的约定：固定周期、固定主题、固定核查标准，让神秘题材拥有可预期的节奏。</p>
+      <div class="sir-grid" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+        <article class="sir-card" style="padding:22px">
+          <span class="sir-chip">更新中 · 第 12 期</span>
+          <h3 class="sir-h3" style="margin-top:12px">夜航档案</h3>
+          <p style="font-size:13.5px;color:var(--sir-muted)">每月一期，聚焦夜间发生、难以复现的影像事件，强调拍摄环境与光源条件的完整还原。</p>
+          <ul style="font-size:13.3px;color:#b9c9de;padding-left:18px;margin:12px 0 0">
+            <li>夜访旧城档案馆：第 7 排书架</li>
+            <li>雾中信号：1987 年短波录音复原</li>
+            <li>沿海小镇的第七次潮汐记录</li>
+          </ul>
+        </article>
+        <article class="sir-card" style="padding:22px">
+          <span class="sir-chip sir-chip-amber">更新中 · 第 8 期</span>
+          <h3 class="sir-h3" style="margin-top:12px">手稿与地图</h3>
+          <p style="font-size:13.5px;color:var(--sir-muted)">与修复师、地图学者合作，把纸面上的涂改与折痕读成一段可验证的历史。</p>
+          <ul style="font-size:13.3px;color:#b9c9de;padding-left:18px;margin:12px 0 0">
+            <li>被反复涂改的地图：四层墨迹</li>
+            <li>一张船票背面的坐标手写体</li>
+            <li>旧校舍平面图上的第九间教室</li>
+          </ul>
+        </article>
+        <article class="sir-card" style="padding:22px">
+          <span class="sir-chip">征集中 · 报名开放</span>
+          <h3 class="sir-h3" style="margin-top:12px">未解影像征集</h3>
+          <p style="font-size:13.5px;color:var(--sir-muted)">面向所有观众开放投稿，入选作品将由官方团队提供核查支持与剪辑协助，并署名发布。</p>
+          <ul style="font-size:13.3px;color:#b9c9de;padding-left:18px;margin:12px 0 0">
+            <li>投稿截止：2026 年 12 月 20 日</li>
+            <li>入选数量：12 支短片</li>
+            <li>支持形式：核查、剪辑、配乐授权</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵：双列简介 -->
+  <section class="sir-section" id="authors" aria-labelledby="sirAuthorsTitle">
+    <div class="sir-container">
+      <span class="sir-eyebrow">创作者矩阵 · 官方签约</span>
+      <h2 class="sir-h2" id="sirAuthorsTitle">把<em>秘密研究所神秘</em>拍出来的人</h2>
+      <p class="sir-lead">他们来自不同行业，共享同一套核查标准。点击下方作者卡片可查看简介与合作信息。</p>
+      <div class="sir-grid sir-author-grid">
+        <article class="sir-card sir-author">
+          <div class="sir-avatar" style="background:linear-gradient(140deg,#3ee6c4,#1f8f7b)">夜</div>
+          <div>
+            <h3>夜航观察员</h3>
+            <div class="sir-field">擅长：城市探索 / 夜间拍摄</div>
+            <p>前新闻摄影记者，习惯在凌晨两点出门。擅长用自然光与长焦记录城市里被忽略的角落，主张“先拍到，再解释”。在秘密研究所神秘主持《夜航档案》系列，已上线 12 期。</p>
+            <div class="sir-author-stats"><span>作品 86</span><span>粉丝 24.6 万</span><span>签约 3 年</span></div>
+          </div>
+        </article>
+        <article class="sir-card sir-author">
+          <div class="sir-avatar" style="background:linear-gradient(140deg,#f7b733,#c07f14)">林</div>
+          <div>
+            <h3>林间档案室</h3>
+            <div class="sir-field">擅长：深度测评 / 证据复核</div>
+            <p>物理学背景，做过五年实验室助理。加入后负责影像的技术复核，能把一段模糊画面拆成设备参数、光路与环境变量。他说自己最大的成就是“证明了一件事其实很普通”。</p>
+            <div class="sir-author-stats"><span>作品 54</span><span>粉丝 18.2 万</span><span>签约 2 年</span></div>
+          </div>
+        </article>
+        <article class="sir-card sir-author">
+          <div class="sir-avatar" style="background:linear-gradient(140deg,#8fb7ff,#3c62a8)">潮</div>
+          <div>
+            <h3>潮线纪录组</h3>
+            <div class="sir-field">擅长：在地文化 / 口述史</div>
+            <p>由三位海边长大的年轻人组成，长期跟拍渔民、灯塔看守与渡口售票员。他们相信地方记忆藏在细节里，比如一张手写的潮汐表，或者一条被踩平的堤岸小路。</p>
+            <div class="sir-author-stats"><span>作品 41</span><span>粉丝 12.9 万</span><span>签约 2 年</span></div>
+          </div>
+        </article>
+        <article class="sir-card sir-author">
+          <div class="sir-avatar" style="background:linear-gradient(140deg,#ff9b7a,#b04a2c)">旧</div>
+          <div>
+            <h3>旧频率</h3>
+            <div class="sir-field">擅长：声音工程 / 档案修复</div>
+            <p>声音设计师，收藏了二百多盘旧磁带。擅长降噪、频谱分析与声音场景还原，主持《雾中信号》系列。他的工作原则是：不确定的部分不要修补，保留噪声本身就是信息。</p>
+            <div class="sir-author-stats"><span>作品 37</span><span>粉丝 9.8 万</span><span>签约 2 年</span></div>
+          </div>
+        </article>
+        <article class="sir-card sir-author">
+          <div class="sir-avatar" style="background:linear-gradient(140deg,#c9a6ff,#6b46a8)">走</div>
+          <div>
+            <h3>走神的灯</h3>
+            <div class="sir-field">擅长：人物访谈 / 情感故事</div>
+            <p>独立撰稿人，做过十年深夜电台编辑。她擅长把访谈拍成聊天，让嘉宾在沉默里说出真话。她认为神秘不一定是超自然，有时只是一个人不愿说出口的往事。</p>
+            <div class="sir-author-stats"><span>作品 63</span><span>粉丝 21.3 万</span><span>签约 3 年</span></div>
+          </div>
+        </article>
+        <article class="sir-card sir-author">
+          <div class="sir-avatar" style="background:linear-gradient(140deg,#7ee0a8,#2b8f5c)">编</div>
+          <div>
+            <h3>秘密研究所神秘编辑部</h3>
+            <div class="sir-field">擅长：行业观察 / 幕后记录</div>
+            <p>官方编辑团队，负责选题、流程与标准制定。他们很少出镜，却把每一期视频的核查清单整理成可公开的文档。他们的目标是让内容生态透明、可讨论、可持续。</p>
+            <div class="sir-author-stats"><span>作品 128</span><span>粉丝 31.5 万</span><span>官方账号</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 评论区：双列短评 + 评分摘要 -->
+  <section class="sir-section" id="voices" aria-labelledby="sirVoicesTitle">
+    <div class="sir-container">
+      <span class="sir-eyebrow">观众回声 · 真实反馈</span>
+      <h2 class="sir-h2" id="sirVoicesTitle">观众如何评价<em>秘密研究所神秘</em></h2>
+      <p class="sir-lead">以下评论来自官网评论区与作品页，仅作匿名整理。我们保留不同意见，也欢迎更具体的补充。</p>
+
+      <div class="sir-card sir-score">
+        <div><b>4.8</b><small style="display:block">综合口碑评分（满分 5）</small></div>
+        <div><small>内容可信度</small><div class="sir-bar"><i style="width:96%"></i></div></div>
+        <div><small>画面品质</small><div class="sir-bar"><i style="width:94%"></i></div></div>
+        <div><small>更新稳定度</small><div class="sir-bar"><i style="width:91%"></i></div></div>
+        <div><small>社区氛围</small><div class="sir-bar"><i style="width:89%"></i></div></div>
+      </div>
+
+      <div class="sir-grid sir-comment-grid">
+        <div class="sir-comment">
+          <div class="sir-comment-head"><span class="sir-comment-avatar" style="background:#3ee6c4">周</span><b>周末不加班</b><small>看过 63 支作品</small></div>
+          最打动我的不是那些神秘画面，而是片尾的核查说明。第一次见到有人把自己没搞清楚的地方老老实实写出来，反而更可信了。
+        </div>
+        <div class="sir-comment">
+          <div class="sir-comment-head"><span class="sir-comment-avatar" style="background:#f7b733">老</span><b>老陈的相机</b><small>摄影爱好者</small></div>
+          画面质感在这一类内容里属于第一梯队。夜间拍摄的噪点控制得很好，字幕排版也舒服，看得出是专业团队在做。
+        </div>
+        <div class="sir-comment">
+          <div class="sir-comment-head"><span class="sir-comment-avatar" style="background:#8fb7ff">小</span><b>小满在南方</b><small>新观众</small></div>
+          刚关注两周，把《潮汐记录》那期反复看了三遍。我老家也在海边，看到那张手写潮汐表的时候愣了一下，太真实了。
+        </div>
+        <div class="sir-comment">
+          <div class="sir-comment-head"><span class="sir-comment-avatar" style="background:#ff9b7a">阿</span><b>阿澈</b><small>档案爱好者</small></div>
+          唯一的小建议：有些期数的背景音乐稍微抢了一点，人声访谈部分可以再压低。整体还是很喜欢，希望多做长片。
+        </div>
+        <div class="sir-comment">
+          <div class="sir-comment-head"><span class="sir-comment-avatar" style="background:#c9a6ff">念</span><b>念念不忘</b><small>连续签到 210 天</small></div>
+          从大学看到工作，这个品牌给我的感觉是“陪伴”。它不吓人，也不故弄玄虚，就是慢慢讲一件事，很适合睡前看。
+        </div>
+        <div class="sir-comment">
+          <div class="sir-comment-head"><span class="sir-comment-avatar" style="background:#7ee0a8">林</span><b>林场夜班</b><small>投稿入选 1 次</small></div>
+          我投的线索真的被回复了，编辑跟我打了四十分钟电话核对时间地点。虽然最后没拍成，但这个过程让我觉得被认真对待。
+        </div>
+        <div class="sir-comment">
+          <div class="sir-comment-head"><span class="sir-comment-avatar" style="background:#3ee6c4">海</span><b>海边旧书店</b><small>内容从业者</small></div>
+          从行业角度看，这套核查标准做得比很多传统媒体还细。如果能把每一期的参考资料也开放下载，会更有影响力。
+        </div>
+        <div class="sir-comment">
+          <div class="sir-comment-head"><span class="sir-comment-avatar" style="background:#f7b733">北</span><b>北纬三十度</b><small>地理老师</small></div>
+          拿《雾中信号》那期在课堂上做过讨论，学生对“如何判断一段录音是否可信”特别感兴趣，比讲课本有用多了。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 企业动态 + 合作 + FAQ -->
+  <section class="sir-section" id="news" aria-labelledby="sirNewsTitle">
+    <div class="sir-container">
+      <span class="sir-eyebrow">企业动态 · 官方发布</span>
+      <h2 class="sir-h2" id="sirNewsTitle"><em>秘密研究所神秘</em>近期品牌与内容更新</h2>
+      <p class="sir-lead">这里汇总官网发布、合作进展与栏目调整，所有信息以官方公告为准。</p>
+      <div class="sir-grid sir-news-grid">
+        <article class="sir-card sir-news">
+          <time datetime="2026-11-18">2026.11.18</time>
+          <h3>《夜航档案》第 12 期上线</h3>
+          <p>新增 4 支高清纪录短片，同步开放本期核查清单与拍摄手记下载。</p>
+        </article>
+        <article class="sir-card sir-news">
+          <time datetime="2026-11-10">2026.11.10</time>
+          <h3>与三家地方档案馆达成合作</h3>
+          <p>未来一年将联合整理地方影像档案，首批开放 200 组历史照片的授权引用。</p>
+        </article>
+        <article class="sir-card sir-news">
+          <time datetime="2026-10-29">2026.10.29</time>
+          <h3>创作者扶持计划第二期启动</h3>
+          <p>面向新人创作者开放 20 个名额，提供设备、剪辑与核查支持，报名通道已开启。</p>
+        </article>
+      </div>
+
+      <h3 class="sir-h3" style="margin-top:44px">合作与伙伴</h3>
+      <div class="sir-grid sir-partner-grid">
+        <div class="sir-partner">城市影像档案馆</div>
+        <div class="sir-partner">南方声音实验室</div>
+        <div class="sir-partner">海岸线纪录联盟</div>
+        <div class="sir-partner">旧物修复工作坊</div>
+      </div>
+
+      <div class="sir-faq" id="faq" style="margin-top:48px">
+        <span class="sir-eyebrow">帮助中心</span>
+        <h2 class="sir-h2">关于<em>秘密研究所神秘</em>的常见问题</h2>
+        <details open>
+          <summary>秘密研究所神秘的内容都是真实的吗？</summary>
+          <p>我们坚持“可核查优先”。每支作品都会标注事件来源、拍摄时间与确定性等级。无法判断的部分会明确写出，不会用剪辑制造不存在的结论。</p>
+        </details>
+        <details>
+          <summary>官网的内容可以转载或二次使用吗？</summary>
+          <p>标注“官方正版”的影像可申请授权转载，需保留完整片头与来源说明。未标注授权的素材请勿商用，具体可在投稿页面提交授权申请。</p>
+        </details>
+        <details>
+          <summary>如何向你们提交线索或投稿？</summary>
+          <p>点击页面中的“提交你的线索”按钮，填写时间、地点与可提供的原始素材说明。编辑团队会在 7 个工作日内回复初筛结果。</p>
+        </details>
+        <details>
+          <summary>更新频率是怎样的？</summary>
+          <p>主栏目《夜航档案》每月一期，专题企划按季度推进，日常短片与幕后内容不定期更新。所有更新会在公告条与官网页同步发布。</p>
+        </details>
+        <details>
+          <summary>我可以在官网上收藏或分享作品吗？</summary>
+          <p>可以。每张作品卡片都提供点赞、收藏与复制链接功能，收藏状态保存在本地浏览器中，分享链接可直接发送给朋友。</p>
+        </details>
+        <details>
+          <summary>品牌是否接受企业合作？</summary>
+          <p>接受。我们与档案馆、文化机构、影像设备与内容平台均有合作。合作方需认同我们的核查标准与隐私保护规范，具体可通过页脚联系方式沟通。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="sir-footer">
+  <div class="sir-container">
+    <div class="sir-footer-grid">
+      <div>
+        <h4>秘密研究所神秘 官方网站</h4>
+        <p>专注神秘纪录影像的原创视频品牌与内容平台，深耕垂直领域，以专业、正版、高清的出品服务观众与合作伙伴。我们相信，真实本身就是一种力量。</p>
+        <p style="margin-top:10px">持续运营中 · 值得信赖的内容生态</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#videos">精选影像</a></li>
+          <li><a href="#archive">档案解析</a></li>
+          <li><a href="#authors">创作者矩阵</a></li>
+          <li><a href="#voices">观众回声</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#news">企业动态</a></li>
+          <li><a href="#faq">帮助中心</a></li>
+          <li><a href="#submit" class="sir-open-submit">投稿与线索</a></li>
+          <li><a href="#voices">合作咨询</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <p>品牌合作：brand@secret-lab.example</p>
+        <p>内容投稿：submit@secret-lab.example</p>
+        <p>工作时间：周一至周五 10:00–19:00</p>
+      </div>
+    </div>
+    <div class="sir-footer-bottom">
+      <span>© 2026 秘密研究所神秘 版权所有 · 持续运营 · 官方网站</span>
+      <span>视听内容备案号：影纪备 2026-0118 号 · 内容均为原创或已获正版授权</span>
+    </div>
+  </div>
+</footer>
+
+<button class="sir-top" id="sirTop" type="button" aria-label="回到顶部">↑</button>
+
+<div class="sir-modal-mask" id="sirModalMask" role="dialog" aria-modal="true" aria-labelledby="sirModalTitle">
+  <div class="sir-modal">
+    <button class="sir-modal-close" id="sirModalClose" type="button" aria-label="关闭">×</button>
+    <h3 id="sirModalTitle">提交你的线索</h3>
+    <p>请尽量写清楚时间、地点与你手头有的原始素材。编辑团队会在 7 个工作日内回复。</p>
+    <input type="text" id="sirSubmitName" placeholder="你的昵称" aria-label="昵称">
+    <textarea id="sirSubmitText" rows="4" placeholder="线索描述：在哪里、什么时候、发生了什么、你有什么素材" aria-label="线索描述"></textarea>
+    <button class="sir-btn sir-btn-primary" id="sirSubmitSend" type="button">提交线索</button>
+  </div>
+</div>
+
+<div class="sir-toast" id="sirToast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toast = document.getElementById("sirToast");
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove("show"); }, 2000);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById("sirBurger");
+  var nav = document.getElementById("sirNav");
+  burger.addEventListener("click", function(){
+    var open = nav.classList.toggle("open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+    burger.setAttribute("aria-label", open ? "收起导航" : "展开导航");
+  });
+  nav.addEventListener("click", function(e){
+    if(e.target.tagName === "A"){
+      nav.classList.remove("open");
+      burger.setAttribute("aria-expanded","false");
+    }
+  });
+
+  /* 搜索提示 */
+  var searchInput = document.getElementById("sirSearchInput");
+  var searchBtn = document.getElementById("sirSearchBtn");
+  var searchHint = document.getElementById("sirSearchHint");
+  var searchPool = [
+    "夜航档案 · 旧城档案馆",
+    "雾中信号 · 短波录音复原",
+    "潮汐记录 · 沿海小镇",
+    "手稿与地图 · 四层墨迹",
+    "创作幕后 · 背景核查流程",
+    "创作者 · 夜航观察员",
+    "创作者 · 林间档案室",
+    "专题 · 未解影像征集"
+  ];
+
+  function renderHint(kw){
+    var list = searchPool.filter(function(item){
+      return !kw || item.toLowerCase().indexOf(kw.toLowerCase()) !== -1;
+    }).slice(0,5);
+    if(!list.length){
+      searchHint.innerHTML = "<p>暂无匹配内容，试试「档案」「创作者」或「纪实」</p>";
+    }else{
+      searchHint.innerHTML = list.map(function(item){
+        return "<p>" + item + "</p>";
+      }).join("");
+    }
+    searchHint.classList.add("show");
+  }
+  searchInput.addEventListener("input", function(){ renderHint(this.value.trim()); });
+  searchInput.addEventListener("focus", function(){ renderHint(this.value.trim()); });
+  searchBtn.addEventListener("click", function(){
+    var kw = searchInput.value.trim();
+    if(!kw){ showToast("请输入关键词再搜索"); return; }
+    renderHint(kw);
+    showToast("已为你筛选「" + kw + "」相关内容");
+  });
+  document.addEventListener("click", function(e){
+    if(!searchHint.contains(e.target) && e.target !== searchInput && e.target !== searchBtn){
+      searchHint.classList.remove("show");
+    }
+  });
+
+  /* 点赞 / 收藏 */
+  document.querySelectorAll(".sir-like").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var liked = btn.getAttribute("data-liked") === "true";
+      var numEl = btn.querySelector("i");
+      var numText = numEl ? numEl.textContent : "";
+      var base = parseFloat(numText) || 0;
+      if(!liked){
+        btn.setAttribute("data-liked","true");
+        btn.classList.add("is-liked");
+        btn.innerHTML = "♥ 已赞 <i>" + (base ? (base + 0.1).toFixed(1) + "万" : "1") + "</i>";
+        showToast("已点赞，感谢支持");
+      }else{
+        btn.setAttribute("data-liked","false");
+        btn.classList.remove("is-liked");
+        btn.innerHTML = "♡ 点赞" + (numText ? " <i>" + numText + "</i>" : "");
+        showToast("已取消点赞");
+      }
+    });
+  });
+
+  document.querySelectorAll(".sir-save").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var saved = btn.getAttribute("data-saved") === "true";
+      btn.setAttribute("data-saved", saved ? "false" : "true");
+      btn.classList.toggle("is-saved", !saved);
+      btn.textContent = saved ? "☆ 收藏" : "★ 已收藏";
+      showToast(saved ? "已取消收藏" : "已加入收藏，可在本机继续观看");
+    });
+  });
+
+  /* 复制链接 */
+  document.querySelectorAll(".sir-copy").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var text = "秘密研究所神秘 · 精选影像";
+      function done(){ showToast("链接已复制到剪贴板"); }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done).catch(function(){
+          showToast("复制失败，请手动选择文本");
+        });
+      }else{
+        var ta = document.createElement("textarea");
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        try{ document.execCommand("copy"); done(); }
+        catch(e){ showToast("复制失败，请手动选择文本"); }
+        document.body.removeChild(ta);
+      }
+    });
+  });
+
+  /* 投稿弹窗 */
+  var mask = document.getElementById("sirModalMask");
+  var modalClose = document.getElementById("sirModalClose");
+  var submitSend = document.getElementById("sirSubmitSend");
+  function openModal(){
+    mask.classList.add("show");
+    document.getElementById("sirSubmitName").focus();
+  }
+  function closeModal(){ mask.classList.remove("show"); }
+
+  var openBtn = document.getElementById("sirOpenSubmit");
+  if(openBtn){ openBtn.addEventListener("click", function(e){ e.preventDefault(); openModal(); }); }
+  document.querySelectorAll(".sir-open-submit").forEach(function(el){
+    el.addEventListener("click", function(e){ e.preventDefault(); openModal(); });
+  });
+  modalClose.addEventListener("click", closeModal);
+  mask.addEventListener("click", function(e){ if(e.target === mask){ closeModal(); } });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape"){ closeModal(); } });
+
+  submitSend.addEventListener("click", function(){
+    var name = document.getElementById("sirSubmitName").value.trim();
+    var text = document.getElementById("sirSubmitText").value.trim();
+    if(!name){ showToast("请先填写昵称"); return; }
+    if(text.length < 10){ showToast("线索描述至少 10 个字"); return; }
+    closeModal();
+    document.getElementById("sirSubmitName").value = "";
+    document.getElementById("sirSubmitText").value = "";
+    showToast("线索已提交，编辑部会尽快回复你");
+  });
+
+  /* 回顶 */
+  var topBtn = document.getElementById("sirTop");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 480){ topBtn.classList.add("show"); }
+    else{ topBtn.classList.remove("show"); }
+  }, { passive:true });
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({ top:0, behavior:"smooth" });
+  });
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll("[data-count]");
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute("data-count"), 10) || 0;
+      var start = null;
+      var duration = 1100;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased).toLocaleString("zh-CN");
+        if(p < 1) requestAnimationFrame(step);
+        else el.textContent = target.toLocaleString("zh-CN");
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCounters(); io.disconnect(); }
+      });
+    }, { threshold:0.4 });
+    var statsWrap = document.querySelector(".sir-stats");
+    if(statsWrap) io.observe(statsWrap);
+  }else{
+    runCounters();
+  }
+})();
+</script>
+</body>
+  </html>
